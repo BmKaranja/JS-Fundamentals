@@ -1,4 +1,2 @@
-let multi=`C ia fun
-Python is cool
-JavaScript is amazing`
+let multi=
 console.log(multi)
