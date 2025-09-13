@@ -1,12 +1,15 @@
-const sizes = [10, 3]; // Add any other sizes you'd like here
+#!/usr/bin/node
 
-for (const size of sizes) {
+const inputs = ["nap", 10, 3];
+
+for (const input of inputs) {
+  const size = parseInt(input);
   if (isNaN(size)) {
     console.log("Missing size");
-  } else {
+  } else if (size > 0) {
     console.log(`\nSize ${size}:`);
     for (let i = 0; i < size; i++) {
-      console.log("x".repeat(size));
+      console.log("X".repeat(size));
     }
   }
 }
